@@ -1,0 +1,23 @@
+<article class="post">
+  <header>
+    <h1><%= title %></h1>
+    <span class="date"><%= date %></span>
+  </header>
+
+  <section class="content">
+    <%= body %>
+  </section>
+
+  <section class="comments">
+   <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'jasonormand';
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+  </section>
+</article>
+

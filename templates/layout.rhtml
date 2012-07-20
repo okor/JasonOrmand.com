@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <title>Freelance Developer and Designer - Jason Ormand</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+
+
+
+  </head>
+  <body>
+
+    <div id="container">
+
+      <div class="nav">
+        <a href="/">BLOG</a>
+        <a href="/about">ABOUT</a>
+        <a href="/work">WORK</a>
+      </div>
+      <div class="clear"></div>
+
+      <div id="title_container" >
+        <a href="/">
+          <h1 id="page_title">
+          Developer. Designer. <span>Jason Ormand</span>
+          </h1>
+        </a>
+        <p id="spiel">Blog/Portfolio for a Developer/Designer/Entrepreneur</p>
+        
+      </div>
+
+      <div class="main">
+
+        <%= yield %>
+
+      </div>
+
+
+      <div id="footer">
+        <a href="/">home</a> | 
+        <a href="/about">about</a> | 
+        <a href="/work">work</a>
+      </div>
+
+    </div>
+    <!-- end .container_24 -->
+
+
+  </body>
+</html>
