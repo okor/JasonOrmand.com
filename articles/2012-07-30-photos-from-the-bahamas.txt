@@ -1,0 +1,31 @@
+---
+title: Photos from the Bahamas
+date: 30/07/2012
+
+I took a trip to Grand Bahamas Island fairly recently. The Bahamas definitely weren't as awe inspiring as Bali, nor where they as crazy insane fun as Thailand. But I had a good time. Got stung by some fire coral. And I managed to snap a few shots.
+
+Like normal, I used my trusty GH2 but this time I used the far superior <a href="http://www.amazon.com/gp/product/B002IKLJVE/">LUMIX 20mm f/1.7</a>, a masterful lens. Very fast, very bright. Using the camera in darkness was like having night vision. Anyways, here are the pics.
+
+<div id="bahamas_2012" style="height: 428px; background: #ccc;">
+    <p>Please enable Javascript to view this slideshow</p>
+</div>
+
+<script src="/js/flickrshow-7.2.min.js"></script>
+<script src="/js/jquery-1.7.2.min.js"></script>
+
+<script>
+    var bahamas_2012 = new flickrshow('bahamas_2012', {
+        autoplay: false,
+        hide_buttons: false,
+        page:1,
+        per_page:100,
+        'set':'72157630829984156'
+    });
+</script>
+
+<script>
+    var robin = new flickrshow('bahamas_2012');
+</script>
+
+Here's the set on Flickr, if you prefer: <a href="http://www.flickr.com/photos/okor_bot/sets/72157630829984156/">Bahamas 2012</a>
+
