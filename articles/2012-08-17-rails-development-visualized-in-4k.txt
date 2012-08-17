@@ -1,0 +1,9 @@
+---
+title: Rails development visualized in 4k
+date: 17/08/2012
+
+You may have heard of a project called <a href="https://github.com/acaudwell/Gource/">Gource</a>. If not, straight from the source "Gource is a software version control visualization tool". The word "awesome" should be in the description somewhere because the visualizations it creates are super impressive. But basically, you have a repository of code and you point Gource at it and it makes awesome. Add a dash of help from ffmpeg to achieve full video sweetness.
+
+Did I mention I rendered it in 4k? Yeah. I did.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ZoKqxGw2m84?hd=1" frameborder="0" allowfullscreen></iframe>
