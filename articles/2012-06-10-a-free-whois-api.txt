@@ -2,13 +2,13 @@ title: A free WHOIS API
 author: Jason Ormand (aka okor)
 date: 2012/06/10
 
-I've used WHOIS a few times, normally in a shell. But a client recently asked me to build a web based WHOIS tool that her website visitors could use. Simple enough. 
+I've used WHOIS a few times, normally in a shell. But a client recently asked me to build a web based WHOIS tool that her website visitors could use. Simple enough.
 
-I couldn't find an acceptable Wordpress plugin or a free WHOIS API, so I decided to build an API. I used the 'whois' gem and Sinatra. 
+I couldn't find an acceptable Wordpress plugin or a free WHOIS API, so I decided to build an API. I used the 'whois' gem and Sinatra.
 
-<code class="shell">
+<pre>
 $ curl http://whoiz.herokuapp.com/lookup.json?url=yahoo.com
-</code>
+</pre>
 
 As of right now, the API will accept requests from anybody. So feel free to use it. If it gets overloaded, I'll just put up another instance and make it private, so my client will still have a working tool.
 
