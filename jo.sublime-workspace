@@ -1,0 +1,208 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jason/Projects/mine/jasonormand.com/templates/pages/about.rhtml",
+		"/Users/jason/Projects/mine/jasonormand.com/templates/pages/archives.haml",
+		"/Users/jason/Projects/mine/jasonormand.com/templates/pages/article.haml",
+		"/Users/jason/Projects/mine/jasonormand.com/templates/pages/index.haml",
+		"/Users/jason/Projects/mine/jasonormand.com/templates/pages/work.haml",
+		"/Users/jason/Projects/mine/jasonormand.com/templates/layout.haml",
+		"/Users/jason/Projects/mine/jasonormand.com/config.ru",
+		"/Users/jason/Projects/mine/toto/lib/toto.rb",
+		"/Users/jason/Projects/mine/jasonormand.com/public/css/styles.css",
+		"/Users/jason/Projects/mine/jasonormand.com/Gemfile",
+		"/Users/jason/Projects/mine/jasonormand.com/jo.sublime-project",
+		"/Users/jason/Projects/mine/jasonormand.com/README.md",
+		"/Users/jason/Projects/mine/jasonormand.com/README",
+		"/Users/jason/Projects/mine/jasonormand.com/articles/2012-09-02-git-tip-for-faster-commits.txt",
+		"/Users/jason/Desktop/notes/todo.txt",
+		"/Users/jason/Desktop/notes/shit_that_i_give_a_fuck_about.txt",
+		"/Users/jason/Desktop/notes/ideas.txt",
+		"/Users/jason/Desktop/MoviHelp2012-09-20-2.txt",
+		"/Users/jason/Projects/mine/sinatra-auth-example/views/signup.haml",
+		"/Users/jason/Projects/mine/sinatra-auth-example/README.md",
+		"/Users/jason/Projects/mine/sinatra-auth-example/config.ru",
+		"/Users/jason/Projects/mine/sinatra-auth-example/Gemfile.lock",
+		"/Users/jason/Projects/opus/local_file_test/test.html",
+		"/Users/jason/Projects/opus/local_file_test/css/styles.css",
+		"/Users/jason/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Volumes/Disk Image/terms.txt",
+		"/Volumes/MCCS6LS16/Crack-OSX/install.txt",
+		"/Users/jason/Projects/opus/local_file_test/js/rotator.js",
+		"/Users/jason/Projects/opus/local_file_test/config.ru",
+		"/Users/jason/Projects/mine/rack-stopwatch/config.ru",
+		"/Users/jason/Projects/opus/local_file_test/js/worker_logger.js",
+		"/Users/jason/Projects/opus/local_file_test/js/workers.js",
+		"/Users/jason/Projects/opus/local_file_test/js/untitled",
+		"/Users/jason/Projects/opus/local_file_test/js/jquery.js",
+		"/Users/jason/.bash_profile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/jason/Projects/mine/sinatra-auth-example",
+			"/Users/jason/Projects/mine/staceyclermont.com-theme",
+			"/Users/jason/Projects/mine/sarahatlee.com-theme"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"article",
+			"txt",
+			"''",
+			")",
+			"--",
+			"font",
+			"mono",
+			"<<\n:",
+			"\n:",
+			"player_1",
+			"margin",
+			"80",
+			"guid",
+			"<span></span>",
+			" border-radius: 3px;",
+			"img_id",
+			"style=\"width: 320px;\"",
+			"width: 320px",
+			"changeImage",
+			"image_end",
+			"image_start",
+			"images_length",
+			"image_index",
+			"Written",
+			"<footer>",
+			"Written"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"player_3",
+			"player_2",
+			"<span class=\"clock\"></span>",
+			"",
+			"player_id",
+			"style=\"width: 320px; border-radius: 3px;\"",
+			"width: 640px",
+			"nextFrame",
+			"end_frame",
+			"start_frame",
+			"image_end",
+			"image_start"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 463.0,
+	"status_bar_visible": true
+}

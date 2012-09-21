@@ -4,6 +4,6 @@ date: 02/09/2012
 
 I save typing by using a git alias to shorten this: <code>git add -A && git commit -m</code> to this: <code>git z</code>. Beautiful.
 
-It's easy. Just create a custom alias like so: <code>git config --global alias.z '!git add -A && gitcommit -m'</code>. That's it. Now I have a single and ultra-short command to add all untracked files, remove previously tracked but deleted files and commit with the following message.
+It's easy. Just create a custom alias like so: <code>git config \--global alias.z '!git add -A && gitcommit -m'</code>. That's it. Now I have a single and ultra-short command to add all untracked files, remove previously tracked but deleted files and commit with the following message.
 
 So my commits look like this: <code>git z "added user model"</code>. I've considered creating another shorcut to push the current branch to origin.

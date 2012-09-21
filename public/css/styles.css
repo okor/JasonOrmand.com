@@ -17,6 +17,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     src: local('League_Gothic'), url('/fonts/League_Gothic.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Liberation Mono';
+    font-style: normal;
+    font-weight:400;
+    src: local('Liberation Mono'), url('/fonts/LiberationMono-Regular.ttf') format('truetype');
+}
+
+
+
 body {
   background: url('/images/page/white_texture.png');
   font-family: serif;;
@@ -238,8 +247,9 @@ border: solid 1px white;
 /* end work */
 
 pre, code {
-  padding: 3px 5px 3px 5px;
-  font-size: 0.8em;
+  font-family: 'Liberation Mono', Courier, monospace;
+  padding: 5px 5px 3px 5px;
+  font-size: 12px;
   border: solid 1px #ccc;
   background: white;
   border-radius: 3px;

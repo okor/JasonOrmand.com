@@ -1,4 +1,5 @@
 
+require 'haml'
 require 'toto'
 
 # Rack config
@@ -28,6 +29,12 @@ toto = Toto::Server.new do
   set :cache,      28800                                    # cache duration, in seconds
 
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+
+  set :to_html,     lambda {|path, page, ctx|
+    ::Haml::Engine.new(File.read("#{path}/#{page}.haml"), :format => :html5, :ugly => true).render(ctx)
+  }
+
+
 end
 
 run toto
