@@ -134,12 +134,14 @@ p {
 
 h1 {
   font-size: 1.4em;
-  font-family: league gothic;
+  font-weight: 400;
+  font-family: 'League_Gothic';
 }
 
 h2 {
   font-size: 1.3em;
-  font-family: league gothic;
+  font-weight: 400;
+  font-family: 'League_Gothic';
 }
 
 .content h2 {
