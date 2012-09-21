@@ -26,11 +26,9 @@ toto = Toto::Server.new do
   set :disqus,    false                                     # disqus id, or false
   set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
   set :ext,       'txt'                                     # file extension for articles
-  set :cache,      28800                                    # cache duration, in seconds
-
-  set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
-
-  set :to_html,     lambda {|path, page, ctx|
+  set :cache,     32000000                                    # cache duration, in seconds
+  set :date,      lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+  set :to_html,   lambda {|path, page, ctx|
     ::Haml::Engine.new(File.read("#{path}/#{page}.haml"), :format => :html5, :ugly => true).render(ctx)
   }
 

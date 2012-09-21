@@ -275,8 +275,17 @@ code.shell:first-letter {
 
 
 
-
-
+.read_more {
+  font-size: 0.8em;
+  position: relative;
+  top: -10px;
+  color: white ! important;
+  background-color: #D5A216;
+  text-shadow: none;
+  padding: 0 6px 2px 6px;
+  opacity: 1;
+  border-radius: 2px;
+}
 
 
 

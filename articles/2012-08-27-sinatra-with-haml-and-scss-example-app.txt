@@ -2,4 +2,4 @@
 title: Sinatra with HAML and SCSS Example App
 date: 27/08/2012
 
-I really like Sinatra's simplicity but I find that I pretty much always prefer to use HAML and SCSS. So I created a cloneable example for use with mini apps. It's also Heroku friendly. It's hosted on Github: <a href="https://github.com/okor/sinatra-haml-scss">https://github.com/okor/sinatra-haml-scss</a>.
+I really like Sinatra's simplicity but I find that I pretty much always prefer to use HAML and SCSS. I didn't want to have to think about everytime I created a new project. So I created a cloneable example for use with mini apps. It's also Heroku friendly. It's hosted on Github: <a href="https://github.com/okor/sinatra-haml-scss">https://github.com/okor/sinatra-haml-scss</a>. Some may find it helpful but it's there more for me, more than anything. 
