@@ -4,6 +4,6 @@ date: 28/09/2012
 
 This tutorial assumes a few things, 1. You're operating system is OSx Mountain Lion 2. You have the latest Homebrew installed (if not, go here fist) 3. You have the latest Xcode installed (4.5 at time of writing, may work with other versions).
 
-Ok, now that's out of the way, let's get started. In a terminal, do this: <code>brew install &#39;https://raw.github.com/gist/3801348/80800cdd8f49d88b882fea33e9fbf573375d02cb/ffmpeg.rb&#39;</code>. Wait several minutes...then, if all goes well <code>ffmpeg -version</code>. You should see <code>ffmpeg version 1.0</code>.
+Ok, now that's out of the way, let's get started. First, unlink any old versions of FFmpeg <code>brew unlink ffmpeg</code>, then install using an updated formula: <code>brew install &#39;https://raw.github.com/gist/3801348/80800cdd8f49d88b882fea33e9fbf573375d02cb/ffmpeg.rb&#39;</code>. Wait several minutes...then, if all goes well <code>ffmpeg -version</code>. You should see <code>ffmpeg version 1.0</code>.
 
 The long url is a Github gist with two tiny updates to the current homebrew ffmpeg install script (url and sha1). I'll put a pull request in to the homebrew guys soon.
