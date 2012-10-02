@@ -4,7 +4,7 @@ date: 20/07/2012
 
 LEMPress is a script that makes setting up a <em>fast</em> Wordpress server very easy. It installs and configures NGINX, Varnish, MySQL and PHP on a clean Ubuntu 12.04 server.
 
-I wrote LEMPress because my freelance work regularly requires working with Wordpress. So I wanted a consistent and easy way to set up servers for that purpose. I could have used something much more robust like Chef, but that's too complex for my needs. So I came up with this bash solution that suites my needs precisely. With a bit more work, it could be a great de facto stack for deploying Wordpress sites.
+I wrote LEMPress because my freelance work regularly requires working with Wordpress. So I wanted a consistent and easy way to set up servers for that purpose. I could have used something much more robust like Chef, but that's too complex for my needs. So I wrote this bash solution as a simpler alternative. With a bit more work, it could be a great de facto stack for deploying Wordpress sites.
 
 Check out the instructions on Github: <a href="https://github.com/okor/LEMPress">LEMPress</a>.
 
@@ -27,3 +27,8 @@ Percentage of the requests served within a certain time (ms)
   99%    150
  100%    150 (longest request)
 </pre>
+
+
+==============================
+
+UPDATE: As of 09/29/2012, you can now preview posts/pages. There was a bug preventing previews, before this update. This change required modifying the Varnish configuration file. If you used LEMPress to set up your server before 09/29/2012, I recommend manually updating the file. You can check out the change here: <a href="https://github.com/okor/LEMPress/commit/950f22ea582c0b091eace4c2a542edb939a754a8">github.com/okor/LEMPress/commit/950f22ea582c0b091eace4c2a542edb939a754a8</a>
