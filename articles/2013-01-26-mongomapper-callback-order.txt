@@ -1,0 +1,77 @@
+---
+title: MongoMapper callback order
+date: 26/01/2013
+
+I recently started using MongoMapper for a project at work. The documentation is pretty sparse and I needed to confirm the precise order of callbacks, per action. So I wrote some simple test code to do just that. Here are the results:
+
+
+
+<div class="floated_list_wrap regular">
+	<h2>.create</h2>
+	<div class="inner">
+		<ol>
+			<li>before_validation</li>
+			<li>validate</li>
+			<li>after_validation</li>
+			<li>before_save</li>
+			<li>before_create</li>
+			<li>after_create</li>
+			<li>after_save</li>
+		</ol>
+	</div>
+</div>
+
+
+<div class="floated_list_wrap regular">
+	<h2>.save</h2>
+	<div class="inner">
+		<ol>
+			<li>before_validation</li>
+			<li>validate</li>
+			<li>after_validation</li>
+			<li>before_save</li>
+			<li>before_update</li>
+			<li>after_update</li>
+			<li>after_save</li>
+		</ol>
+	</div>
+</div>
+
+
+<div class="right floated_list_wrap right">
+	<h2>.update_attributes!</h2>
+	<div class="inner">
+		<ol>
+			<li>before_validation</li>
+			<li>validate</li>
+			<li>after_validation</li>
+			<li>before_save</li>
+			<li>before_update</li>
+			<li>after_update</li>
+			<li>after_save</li>
+		</ol>
+	</div>
+</div>
+
+
+<div class="floated_list_wrap regular">
+	<h2>.destroy</h2>
+	<div class="inner">
+		<ol>
+			<li>before_destroy</li>
+			<li>after_destroy</li>
+		</ol>
+	</div>
+</div>
+
+
+<div class="floated_list_wrap regular">
+	<h2>.touch</h2>
+	<div class="inner">
+		<ol>
+			<li>* no callabacks *</li>
+		</ol>
+	</div>
+</div>
+
+<div class="clear"></div>
