@@ -58,7 +58,10 @@ I've been a Linode fan and customer for years, but just this week I was made awa
 
 
 <h2>The Conclusion</h2>
-<p>Linode has four cores which results in predictably greater CPU performance. DigitalOcean has SSD disks which results in predictably greater I/O performance. But DigitalOcean is 75% cheaper. That's a shit load the last time I checked. Even if you are transcoding video, you could just get a more powerful DigitalOcean server or more of them. From a strictly performance-per-dollar perspective, DigitalOcean has Linode <strong>spanked</strong>.</p> 
+<p>Linode has four cores which results in predictably greater CPU performance. DigitalOcean has SSD disks which results in predictably greater I/O performance. But DigitalOcean is 75% cheaper. That's a shit load the last time I checked. Even if you are transcoding video, you could just get a more powerful DigitalOcean server or more of them. From a strictly performance-per-dollar perspective, DigitalOcean has Linode <strong>spanked</strong>.</p>
+
+<a href="https://twitter.com/okor" class="twitter-follow-button" data-show-count="false">Follow @okor</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
 
