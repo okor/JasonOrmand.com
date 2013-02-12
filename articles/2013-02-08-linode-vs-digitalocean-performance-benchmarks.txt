@@ -8,7 +8,7 @@ I've been a Linode fan and customer for years, but just this week I was made awa
 
 - Linode at $20/month :: 4 Cores running at 2.13GHz, 512MB RAM, 24GB disk, Vanilla Ubuntu 12.04 x64 with ext3 filesystem. Xen.
 
-- DigitalOcean at $5/month :: 1 Core running at 2.0GHz, 512MB RAM, 20GB SSD, Vanilla Ubuntu Server 12.04 x 64 with ext4 filesystem. VMware.
+- DigitalOcean at $5/month :: 1 Core running at 2.0GHz, 512MB RAM, 20GB SSD, Vanilla Ubuntu Server 12.04 x 64 with ext4 filesystem. KVM.
 
 <h2>The Benchmarks</h2>
 
