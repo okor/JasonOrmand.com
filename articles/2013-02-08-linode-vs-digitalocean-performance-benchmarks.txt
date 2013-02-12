@@ -1,0 +1,64 @@
+---
+title: Linode vs DigitalOcean, performance benchmarks
+date: 08/02/2013
+
+I've been a Linode fan and customer for years, but just this week I was made aware of a competing VPS host - DigitalOcean. It's a pretty compelling sell. A VPS for $5 a month, with a 20GB SSD and 512MB of RAM. Fucking, sweet. But when something sounds this good, I'm sceptical. To dispell or validate my thoughts of a "catch", I turn to a handy performance analysis tool - Phoronix Benchmark Suite. Here's the skinny.
+
+<h2>The Setup</h2>
+
+- Linode at $20/month :: 4 Cores running at 2.13GHz, 512MB RAM, 24GB disk, Vanilla Ubuntu 12.04 x64 with ext3 filesystem. Xen.
+
+- DigitalOcean at $5/month :: 1 Core running at 2.0GHz, 512MB RAM, 20GB SSD, Vanilla Ubuntu Server 12.04 x 64 with ext4 filesystem. VMware.
+
+<h2>The Benchmarks</h2>
+
+<div class="charts">
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AqzK07mHnT0fdDU5VlNwM3VKcUt0VGF4UGl4VE9pZHc&transpose=0&headers=1&range=B168%3AD182&gid=0&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#434343","fontSize":16},"series":{"0":{"color":"#567FED"},"1":{"color":"#389332"}},"fontName":"Arial","legendTextStyle":{"color":"#434343","fontSize":12},"animation":{"duration":500},"backgroundColor":{"fill":"#f3f3f3","fillOpacity": "0"},"width":660,"hAxis":{"titleTextStyle":{"color":"#434343","italic":true,"fontSize":12},"useFormatFromData":true,"minValue":null,"viewWindowMode":null,"textStyle":{"color":"#434343","fontSize":"10"},"viewWindow":null,"maxValue":null},"vAxes":[{"useFormatFromData":true,"title":"Megabytes Per Second","minValue":0,"viewWindowMode":"explicit","viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"title":"IOzone Read","booleanRole":"certainty","height":529,"legend":"bottom","isStacked":false},"state":{},"view":{},"chartType":"ColumnChart","chartName":"Chart 7"} </script>
+
+	<hr/>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AqzK07mHnT0fdDU5VlNwM3VKcUt0VGF4UGl4VE9pZHc&transpose=0&headers=1&range=B130%3AD144&gid=0&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#434343","fontSize":16},"series":{"0":{"color":"#567FED"},"1":{"color":"#389332"}},"legendTextStyle":{"color":"#434343","fontSize":"12"},"animation":{"duration":500},"backgroundColor":{"fill":"#f3f3f3","fillOpacity": "0"},"width":660,"hAxis":{"titleTextStyle":{"color":"#434343","italic":true,"fontSize":12},"useFormatFromData":true,"minValue":null,"viewWindowMode":null,"textStyle":{"color":"#434343","fontSize":"10"},"viewWindow":null,"maxValue":null},"vAxes":[{"title":"Megabytes Per Second","useFormatFromData":true,"minValue":0,"viewWindowMode":"explicit","textStyle":{"color":"#222","fontSize":"12"},"viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"IOzone Write","height":416,"legend":"bottom","isStacked":false},"state":{},"view":{},"chartType":"ColumnChart","chartName":"Chart 6"} </script>
+
+</div>
+
+<div class="charts">
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AqzK07mHnT0fdDU5VlNwM3VKcUt0VGF4UGl4VE9pZHc&transpose=0&headers=1&range=B205%3AD206&gid=0&pub=1","options":{"vAxes":[{"useFormatFromData":true,"title":"Seconds","minValue":0,"viewWindowMode":"explicit","viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"titleTextStyle":{"bold":true,"color":"#434343","fontSize":16},"series":{"0":{"color":"#567FED"},"1":{"color":"#12891F"}},"booleanRole":"certainty","title":"X264 Encoding","legendTextStyle":{"color":"#434343","fontSize":12},"animation":{"duration":500},"backgroundColor":{"fill":"#f3f3f3","fillOpacity": "0"},"legend":"bottom","hAxis":{"titleTextStyle":{"color":"#434343","italic":true,"fontSize":12},"useFormatFromData":true,"minValue":null,"viewWindowMode":null,"textStyle":{"color":"#434343","fontSize":12},"viewWindow":null,"maxValue":null},"isStacked":false,"width":660,"height":320},"state":{},"view":{},"chartType":"ColumnChart","chartName":"Chart 8"} </script>
+
+<hr/>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AqzK07mHnT0fdDU5VlNwM3VKcUt0VGF4UGl4VE9pZHc&transpose=0&headers=1&range=B235%3AD236&gid=0&pub=1","options":{"vAxes":[{"useFormatFromData":true,"title":"Seconds","minValue":0,"viewWindowMode":"explicit","viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"titleTextStyle":{"bold":true,"color":"#434343","fontSize":16},"series":{"0":{"color":"#567FED"},"1":{"color":"#12891F"}},"booleanRole":"certainty","title":"MP3 Encoding","legendTextStyle":{"color":"#434343","fontSize":12},"animation":{"duration":500},"backgroundColor":{"fill":"#f3f3f3","fillOpacity": "0"},"legend":"bottom","hAxis":{"titleTextStyle":{"color":"#434343","italic":true,"fontSize":12},"useFormatFromData":true,"minValue":null,"viewWindowMode":null,"textStyle":{"color":"#434343","fontSize":12},"viewWindow":null,"maxValue":null},"isStacked":false,"width":660,"height":320},"state":{},"view":{},"chartType":"ColumnChart","chartName":"Chart 9"} </script>
+
+<hr/>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AqzK07mHnT0fdDU5VlNwM3VKcUt0VGF4UGl4VE9pZHc&transpose=0&headers=1&range=B258%3AD259&gid=0&pub=1","options":{"vAxes":[{"useFormatFromData":true,"title":"Seconds","minValue":0,"viewWindowMode":"explicit","viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"titleTextStyle":{"bold":true,"color":"#434343","fontSize":16},"series":{"0":{"color":"#567FED"},"1":{"color":"#12891F"}},"booleanRole":"certainty","title":"FLAC Encoding","legendTextStyle":{"color":"#434343","fontSize":12},"animation":{"duration":500},"backgroundColor":{"fill":"#f3f3f3","fillOpacity": "0"},"legend":"bottom","hAxis":{"titleTextStyle":{"color":"#434343","italic":true,"fontSize":12},"useFormatFromData":true,"minValue":null,"viewWindowMode":null,"textStyle":{"color":"#434343","fontSize":12},"viewWindow":null,"maxValue":null},"isStacked":false,"width":660,"height":320},"state":{},"view":{},"chartType":"ColumnChart","chartName":"Chart 10"} </script>
+
+</div>
+
+<div class="charts">
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AqzK07mHnT0fdDU5VlNwM3VKcUt0VGF4UGl4VE9pZHc&transpose=0&headers=1&range=B101%3AD106&gid=0&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#434343","fontSize":16},"series":{"0":{"color":"#567FED"},"1":{"color":"#389332"}},"legendTextStyle":{"color":"#434343","fontSize":12},"animation":{"duration":0},"backgroundColor":{"fill":"#f3f3f3","fillOpacity": "0"},"width":660,"hAxis":{"titleTextStyle":{"color":"#434343","italic":true,"fontSize":12},"useFormatFromData":true,"minValue":null,"viewWindowMode":null,"textStyle":{"color":"#434343","fontSize":"10"},"viewWindow":null,"maxValue":null},"vAxes":[{"title":"Megabytes Per Second","useFormatFromData":true,"minValue":0,"viewWindowMode":"explicit","viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"RAMspeed","height":465,"legend":"bottom","isStacked":false},"state":{},"view":{},"chartType":"ColumnChart","chartName":"Chart 5"} </script>
+
+</div>
+
+<div class="charts">
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AqzK07mHnT0fdDU5VlNwM3VKcUt0VGF4UGl4VE9pZHc&transpose=0&headers=1&range=B76%3AD77&gid=0&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#434343","fontSize":16},"series":{"0":{"errorBars":{"errorType":"none"},"color":"#567FED"},"1":{"color":"#389332"}},"legendTextStyle":{"color":"#434343","fontSize":12},"animation":{"duration":0},"backgroundColor":{"fill":"#f3f3f3","fillOpacity": "0"},"width":660,"hAxis":{"titleTextStyle":{"color":"#434343","italic":true,"fontSize":12},"useFormatFromData":true,"minValue":null,"viewWindowMode":null,"textStyle":{"color":"#434343","fontSize":12},"viewWindow":null,"maxValue":null},"vAxes":[{"useFormatFromData":true,"title":"Requests Per Second","minValue":0,"viewWindowMode":"explicit","viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Nginx - Static Page Serving","height":271,"legend":"bottom","tooltip":{},"isStacked":false},"state":{},"view":{},"chartType":"ColumnChart","chartName":"Chart 4"} </script>
+
+	<hr/>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AqzK07mHnT0fdDU5VlNwM3VKcUt0VGF4UGl4VE9pZHc&transpose=0&headers=1&range=B1%3AD2&gid=0&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#434343","fontSize":16},"series":{"0":{"color":"#567FED"},"1":{"color":"#389332","targetAxisIndex":0}},"fontName":"Verdana","legendTextStyle":{"color":"#434343","fontSize":12},"animation":{"duration":500},"backgroundColor":{"fill":"#ffffff","fillOpacity":"0"},"width":660,"hAxis":{"titleTextStyle":{"color":"#434343","italic":true,"fontSize":12},"useFormatFromData":true,"slantedText":false,"minValue":null,"viewWindowMode":null,"textStyle":{"color":"#434343","fontSize":12},"viewWindow":null,"maxValue":null},"chartArea":{"height":"","width":"","left":"","top":""},"vAxes":[{"title":"Requests Per Second","useFormatFromData":true,"minValue":0,"viewWindowMode":"explicit","logScale":false,"viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"logScale":false,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Apache Benchmark - Static Page Serving","height":262,"domainAxis":{"direction":1},"legend":"bottom","tooltip":{},"isStacked":false},"state":{},"view":{},"chartType":"ColumnChart","chartName":"Chart 1"} </script>
+
+	<hr/>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AqzK07mHnT0fdDU5VlNwM3VKcUt0VGF4UGl4VE9pZHc&transpose=0&headers=1&range=B26%3AD27&gid=0&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#434343","fontSize":16},"series":{"0":{"color":"#567FED"},"1":{"color":"#389332"}},"legendTextStyle":{"color":"#434343","fontSize":12},"animation":{"duration":0},"backgroundColor":{"fill":"#f3f3f3","fillOpacity": "0"},"width":660,"hAxis":{"titleTextStyle":{"color":"#434343","italic":true,"fontSize":12},"useFormatFromData":true,"minValue":null,"viewWindowMode":null,"textStyle":{"color":"#434343","fontSize":12},"viewWindow":null,"maxValue":null},"vAxes":[{"title":"Transaction Per Second","useFormatFromData":true,"minValue":0,"viewWindowMode":"explicit","viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"PostMark - Disk Transaction Performance","height":300,"legend":"bottom","isStacked":false},"state":{},"view":{},"chartType":"ColumnChart","chartName":"Chart 2"} </script>
+
+</div>
+
+
+<h2>The Conclusion</h2>
+<p>Linode has four cores which results in predictably greater CPU performance. DigitalOcean has SSD disks which results in predictably greater I/O performance. But DigitalOcean is 75% cheaper. That's a shit load the last time I checked. Even if you are transcoding video, you could just get a more powerful DigitalOcean server or more of them. From a strictly performance-per-dollar perspective, DigitalOcean has Linode <strong>spanked</strong>.</p> 
+
+
+
