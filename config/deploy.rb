@@ -2,9 +2,9 @@ require "bundler/capistrano"
 
 set :domain, 'jo.jasonormand.com'
 set :location, '192.81.216.66'
-# role :web, '192.81.216.66' #nginx
-# role :app, '192.81.216.66' #unicorn
-# role :cache, '192.81.216.66' #varnish
+role :web, '192.81.216.66' #nginx
+role :app, '192.81.216.66' #unicorn
+role :cache, '192.81.216.66' #varnish
 set :application, 'jo'
 
 set :scm, 'git'

@@ -6,6 +6,6 @@ gem 'haml'
 
 gem 'railsless-deploy'
 
-group :development do
+group :production do
   gem 'unicorn'
 end
