@@ -23,18 +23,12 @@ set :deploy_via, :export
 namespace :deploy do
   task :start do ; end
   task :stop do ; end
-  task :restart, :except => { :no_release => true } do
-    run "/etc/init.d/jo_unicorn restart"
+
+  desc "Restart Unicorn & Clear Varnish cache"
+  task :restart do
+  	run "kill -s USR2 `cat #{deploy_to}/shared/pids/unicorn.pid`"
+  	run "curl -X PURGE 127.0.0.1"
   end
-  task :clear_varnish do
-  	sudo "varnishadm 'ban req.url ~ /'"
-  end
+
 end
 
-# if you want to clean up old releases on each deploy uncomment this:
-# after "deploy:restart", "deploy:cleanup"
-
-
-
-# /etc/init.d/jo_unicorn restart
-# sudo varnishadm "ban req.url ~ /"
