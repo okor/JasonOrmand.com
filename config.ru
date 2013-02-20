@@ -1,4 +1,3 @@
-
 require 'haml'
 require 'toto'
 
