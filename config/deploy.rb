@@ -25,10 +25,9 @@ namespace :deploy do
   task :stop do ; end
 
   desc "Restart Unicorn & Clear Varnish cache"
-  task :restart do
+  task :restart, :except => { :no_release => true } do
   	run "kill -s USR2 `cat #{deploy_to}/shared/pids/unicorn.pid`"
   	run "curl -X PURGE 127.0.0.1"
   end
-
 end
 
