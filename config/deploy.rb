@@ -26,8 +26,10 @@ namespace :deploy do
 
   desc "Restart Unicorn & Clear Varnish cache"
   task :restart, :except => { :no_release => true } do
-  	run "kill -s USR2 `cat #{deploy_to}/shared/pids/unicorn.pid`"
+  	# run "kill -s USR2 `cat #{deploy_to}/shared/pids/unicorn.pid`"
+  	run "/etc/init.d/jo_unicorn restart"
   	run "curl -X PURGE 127.0.0.1"
+  	# sudo varnishadm "ban req.url ~ /"
   end
 end
 
