@@ -1,7 +1,10 @@
 %article.post
   %header
     %h1= title
-    %span.date= date
+    %div.meta
+      %span.date= date 
+      by 
+      %span.author= author
   %section.content
     = body
   %section.comments
