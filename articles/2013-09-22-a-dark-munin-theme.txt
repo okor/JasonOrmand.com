@@ -1,0 +1,44 @@
+---
+title: A dark Munin "theme"
+author: Jason Ormand (aka okor)
+date: 2013/09/22
+
+Munin is a cool tool but I always thought the UI/charts should be dark. So I created a little css snippet that can be prepended to the current Munin install style sheet. Nothing fancy, but here it is.
+
+<pre style="padding: 5px;">
+img { -webkit-filter: invert(1) !important; }
+div.logo { -webkit-filter: invert(1) !important; background-color: white !important;} 
+* { background-color: black !important; }
+*:not(a) { color: white !important; border: none !important; }
+a { color: #4dfb45 !important; border: none !important; font-weight: normal !important; }
+</pre>
+
+If you're using Ubuntu 12.04 and the default install location for Munin, the stylesheet should be at <code>/var/www/munin/style.css</code>. The snippet may work with later versions but I've only tested it with Munin 1.4.5/6.
+
+Here are some examples of what the graphs look like, before and after.
+
+
+<div style="text-align: center">
+
+<br/>
+
+<img src="/images/articles/munin-theme/diskstats_latency-week.png"/>
+<img src="/images/articles/munin-theme/diskstats_latency-week_dark.png"/>
+<br/><br/>
+
+
+<img src="/images/articles/munin-theme/iostat_ios-week.png"/>
+<img src="/images/articles/munin-theme/iostat_ios-week_dark.png"/>
+<br/><br/>
+
+
+<img src="/images/articles/munin-theme/nginx_status-week.png"/>
+<img src="/images/articles/munin-theme/nginx_status-week_dark.png"/>
+<br/><br/>
+
+
+<img src="/images/articles/munin-theme/queues_rebuild-week.png"/>
+<img src="/images/articles/munin-theme/queues_rebuild-week_dark.png"/>
+<br/><br/>
+
+</div>
