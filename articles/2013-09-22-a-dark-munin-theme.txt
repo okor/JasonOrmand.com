@@ -3,6 +3,8 @@ title: A dark Munin "theme"
 author: Jason Ormand (aka okor)
 date: 2013/09/22
 
+<strong>Update:</strong> I've created a simple Chrome extension so you don't have to make any changes on your Munin install/s. Check it out: <a href="https://chrome.google.com/webstore/detail/munin-dark-theme/fgboabpjnnfofdmknkijjpaolikljolo">Munin dark theme Chrome extension</a>
+
 Munin is a cool tool but I always thought the UI/charts should be dark. So I created a little css snippet that can be prepended to the current Munin install style sheet. Nothing fancy, but here it is.
 
 <pre style="padding: 5px;">
