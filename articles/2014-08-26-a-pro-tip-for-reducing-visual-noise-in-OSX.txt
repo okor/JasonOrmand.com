@@ -12,3 +12,4 @@ Enter <a href="https://itunes.apple.com/us/app/menu-eclipse-2/id420041409?mt=12"
 Strong recommend.
 
 
+<video src="/videos/menu_eclipse.mp4" controls style="width: 100%;"></video>
