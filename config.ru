@@ -2,7 +2,7 @@ require 'haml'
 require 'toto'
 
 # Rack config
-use Rack::Static, :urls => ['/css', '/fonts', '/js', '/images', '/favicon.ico'], :root => 'public'
+use Rack::Static, :urls => ['/css', '/fonts', '/js', '/images', '/videos', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
 
 if ENV['RACK_ENV'] == 'development'
